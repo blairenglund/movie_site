@@ -1,0 +1,243 @@
+.flexcontainer{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	margin: -8px;
+	height: 100vh;
+
+}
+
+.searchbar{
+	background-color: #BC5A58;
+	margin: -20px -20px 0px -20px;
+	padding: 25px 25px 25px 25px;
+}
+
+.searchbar__field{
+	background-color: #BC5A58;
+	color: #FFF;
+	border: none;
+	border-bottom: 2px solid white;
+	width: 90%;
+	background-image: url('http://placekitten.com/20/20');
+    background-position: 135px 1px; 
+    background-repeat: no-repeat;
+    padding: 2px 0px 4px 0px;
+}
+
+.searchbar__field::-webkit-input-placeholder{
+	color: white;
+	font-style: italic;
+}
+
+.sidenav{
+	background-color: #12171B;
+	padding: 20px;
+	flex-shrink: 0;
+	width: 180px;
+}
+
+.list__head{
+	color: #333E44;
+	font-family: "Helvetica", Tahoma, sans-serif;
+	padding-top: 20px;
+}
+
+.list__icon{
+	border-radius: 10px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.list__text{
+	color: white;
+	font-family: "Helvetica", Tahoma, sans-serif;
+	margin: 15px 0 15px 0;
+	list-style-image: url(http://placekitten.com/15/15);
+	font-size: 10pt;
+}
+
+.list__text--currentpage{
+	background-color: #1E242B;
+	padding: 10px 0px 10px 10px;
+	margin: -10px 0 -10px -10px;
+}
+
+.movielist{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: space-between;
+	justify-content: space-between;
+	align-content: space-between;
+	padding: 0px 20px 0px 20px;
+}
+
+.main{
+	max-height: 100vh;
+}
+
+.main__top{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 35px 0 35px;
+	font-family: "Helvetica", Tahoma, sans-serif;
+}
+
+.main__head{
+	font-family: "Helvetica", Tahoma, sans-serif;
+	font-size: 24pt;
+}
+
+.main__order{
+	font-size: 10pt;
+	font-weight: bold;
+	color: #DDD;
+}
+
+.main__order--selected{
+	color: #88BFC6;
+}
+
+.main__icon{
+	border-radius: 20px;
+}
+
+.movie{
+	margin: 15px;
+}
+
+.movie__image{
+	border-radius: 4px;
+}
+
+.movie__title{
+	font-family: "Helvetica", Tahoma, sans-serif;
+	font-weight: bold;
+	font-size: 10pt;
+	margin-bottom: -12px;
+}
+
+.movie__text{
+	font-family: "Helvetica", Tahoma, sans-serif;
+	font-size: 10pt;
+}
+
+.sidechat{
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: stretch;
+	justify-content: space-between;
+	background-color: #EDEEEF;
+	flex-shrink: 0;
+	padding: 20px;
+	width: 180px;
+}
+
+.sidechat__self{
+	background-color: #88BFC6;
+	margin: -20px;
+	padding: 25px 25px 25px 25px;
+	flex-shrink: 0;
+}
+
+.sidechat__search{
+	background-color: #C6CDD8;
+	margin: 0px -20px -20px -20px;
+	padding: 25px 25px 25px 25px;
+	flex-shrink: 0;
+}
+
+.sidechat__field{
+	background-color: #C6CDD8;
+	color: #FFF;
+	border: none;
+	border-bottom: 2px solid white;
+	width: 90%;
+	background-image: url('http://placekitten.com/20/20');
+    background-position: 135px 1px; 
+    background-repeat: no-repeat;
+    padding: 2px 0px 4px 0px;
+}
+
+.sidechat__field::-webkit-input-placeholder{
+	color: white;
+	font-style: italic;
+}
+
+.sidechat__friends{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+}
+
+.sidechat__head{
+	color: #333E44;
+	font-family: "Helvetica", Tahoma, sans-serif;
+	padding-top: 20px;
+}
+
+.sidechat__self{
+	color: #fff;
+	font-family: "Helvetica", Tahoma, sans-serif;
+	font-size: 10pt;
+}
+
+.friend{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 50px;
+}
+
+.friend__icon{
+	border-radius: 15px;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+.friend__text{
+}
+
+.friend__person{
+	color: #12171B;
+	font-family: "Helvetica", Tahoma, sans-serif;
+	font-weight: bold;
+	margin: 10px 0 10px 0;
+	font-size: 10pt;
+}
+
+.friend__movie{
+	font-family: "Helvetica", Tahoma, sans-serif;
+	font-size: 9pt;
+	margin-top: -11px;
+}
+
+.friend__status{
+	color: #C6CDD8;
+	margin-left: 15px;
+	font-size: 24pt;
+}
+
+.friend__status--online{
+	color: #9FB35B;
+}
+
+.friend__status--busy{
+	color: #EBAF23;
+}
+
+.friend__status--donotdisturb{
+	color: #BB5A58;
+}
+
+
+
+
+
+
+
+
+
