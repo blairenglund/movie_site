@@ -1,7 +1,4 @@
-.flexcontainer{
-	/* display: flex;
-	flex-flow: row nowrap;
-	justify-content: space-between; */
+.container{
 	margin: -8px -8px 0px -8px;
 	height: 100vh;
 }
@@ -37,7 +34,6 @@
 .sidenav{
 	background-color: #12171B;
 	padding: 20px;
-	flex-shrink: 0;
 	width: 180px;
 	position: fixed;
 	top:75px;
@@ -46,7 +42,7 @@
 }
 
 .navbar__list{
-	margin: 0 0 0 -40px;
+	padding: 0;
 }
 
 .sidebar__head{
@@ -58,13 +54,13 @@
 
 .sidebar__list{
 	display: inline;
-	margin-top: -10px;
-	margin-left: -35px;
+	padding: 0;
+	margin-top: -8px;
 }
 
 .listitem{
 	list-style: none;
-	margin: 25px 0 25px 0;
+	padding: 15px 0 15px 0;
 }
 
 .listitem__icon{
@@ -80,10 +76,16 @@
 	font-size: 10pt;
 }
 
+.listitem:hover{
+	background-color: #1E242B;
+	padding-left: 10px;
+	margin-left: -10px;
+}
+
 .listitem--currentpage{
 	background-color: #1E242B;
-	padding: 15px 0 1px 10px;
-	margin: -15px 0 -15px -10px;
+	padding-left: 10px;
+	margin-left: -10px;
 }
 
 
@@ -94,7 +96,7 @@
 
 .main__top{
 	display: flex;
-	flex-flow: row nowrap;
+	flex-flow: row wrap;
 	justify-content: space-between;
 	align-items: center;
 	padding: 0px 35px 0 35px;
@@ -106,11 +108,20 @@
 	font-size: 24pt;
 }
 
+.sortlinks{
+	min-width: 500px;
+}
+
 .sortLinks__link{
 	font-size: 10pt;
 	font-weight: bold;
+	text-decoration: none;
 	color: #DDD;
 	font-family: "Helvetica", Tahoma, sans-serif;
+}
+
+.sortLinks__link:hover{
+	color: #88BFC6;
 }
 
 .sortLinks__link--selected{
@@ -120,8 +131,9 @@
 .sortLinks__divider{
 	font-size: 10pt;
 	font-weight: bold;
-	color: #DDD
+	color: #DDD;
 	font-family: "Helvetica", Tahoma, sans-serif;
+	margin: 0 3px 0 3px;
 }
 
 .otherbuttons__icon{
@@ -186,7 +198,7 @@
 	align-items: flex-start;
 	justify-content: space-between; */
 	background-color: #EDEEEF;
-	padding: 0px 20px 0px 20px;
+	padding: 20px 20px 0px 20px;
 	width: 170px;
 	position: fixed;
 	right: 0;
@@ -201,12 +213,12 @@
 }
 .l-self{
 	width: 170px;
-	height: 75px;
 	position: fixed;
 	right: 0;
 	top: 0;
 	z-index: 1;
-	padding: 0 20px 0 20px;
+	padding: 20px;
+	margin-bottom: 10px;
 }
 
 .chatsearch{
