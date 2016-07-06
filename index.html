@@ -6,108 +6,272 @@
 </head>
 <body>
 <div class="flexcontainer">
+	<div class="searchbar l-searchbar">
+		<input type="searchline" name="Search" class="searchbar__field" placeholder="Search movies...">
+	</div>
 	<div class="sidenav">
-		<div class="searchbar">
-			<input type="searchline" name="Search" class="searchbar__field" placeholder="Search movies...">
-		</div>
-		<h5 class="sidebar__head">Main</h5>
-			<p class="list__text"><img class="list__icon" src="http://placekitten.com/15/15">Playing</p>
-			<p class="list__text list__text--currentpage"><img class="list__icon" src="http://placekitten.com/15/15">Discover</p>
-			<p class="list__text"><img class="list__icon" src="http://placekitten.com/15/15">Activity</p>
-			<p class="list__text"><img class="list__icon" src="http://placekitten.com/15/15">Top Charts</p>
-			<p class="list__text"><img class="list__icon" src="http://placekitten.com/15/15">New Releases</p>
-		<h5 class="sidebar__head">Your Movie Circles</h5>
-			<p class="list__text"><img class="list__icon" src="http://placekitten.com/15/15">This I Must See</p>
-			<p class="list__text"><img class="list__icon" src="http://placekitten.com/15/15">The Best</p>
-		<h5 class="sidebar__head">Collections</h5>
-			<p class="list__text"><img class="list__icon" src="http://placekitten.com/15/15">Me and Bob</li>
-			<p class="list__text"><img class="list__icon" src="http://placekitten.com/15/15">Travel Movies</li>
+		<p class="sidebar__head">Main</p>
+		<ul class="navbar__list">
+			<li class="listitem"><img class="listitem__icon" src="http://placekitten.com/15/15"><span class="listitem__text">Playing</span></li>
+			<li class="listitem listitem--currentpage"><img class="listitem__icon" src="http://placekitten.com/15/15"><span class="listitem__text">Discover</span></p>
+			<li class="listitem"><img class="listitem__icon" src="http://placekitten.com/15/15"><span class="listitem__text">Activity</span></li>
+			<li class="listitem"><img class="listitem__icon" src="http://placekitten.com/15/15"><span class="listitem__text">Top Charts</span></li>
+			<li class="listitem"><img class="listitem__icon" src="http://placekitten.com/15/15"><span class="listitem__text">New Releases</span></li>
+		</ul>
+		<p class="sidebar__head">Your Movie Circles</p>
+		<ul class="navbar__list">
+			<li class="listitem"><img class="listitem__icon" src="http://placekitten.com/15/15"><span class="listitem__text">This I Must See</span></li>
+			<li class="listitem"><img class="listitem__icon" src="http://placekitten.com/15/15"><span class="listitem__text">The Best</span></li>
+		</ul>
+		<p class="sidebar__head">Collections</p>
+		<ul class="navbar__list">
+			<li class="listitem"><img class="listitem__icon" src="http://placekitten.com/15/15"><span class="listitem__text">Me and Bob</span></li>
+			<li class="listitem"><img class="listitem__icon" src="http://placekitten.com/15/15"><span class="listitem__text">Travel Movies</span></li>
+		</ul>
 	</div>
 	<div class="main">
 		<div class="main__top">
 			<p class="main__head">Discover</p>
-			<div class="main__order">
-				<a>Release Date</a>&nbsp;|&nbsp;<a class="main__order--selected">Popularity</a>
+			<div class="sortLinks">
+				<a class="sortLinks__link" src="..">Release Date</a>&nbsp;
+				<span class="sortLinks__divider">|</span>&nbsp;
+				<a class="sortLinks__link sortLinks__link--selected" src="/">Popularity</a>
 			</div>
-			<div>
-				<img class="main__icon" src="http://placekitten.com/22/22">&nbsp;<img class="main__icon" src="http://placekitten.com/22/22">
+			<div class = "otherbuttons">
+				<img class="otherbuttons__icon" src="http://placekitten.com/22/22">&nbsp;<img class="otherbuttons__icon" src="http://placekitten.com/22/22">
 			</div>
 		</div>
+
 		<div class="movielist">
-			<div class="movie">
-				<img src="http://placekitten.com/124/184" class="movie__image">
+
+			<div class="movie l-movie">
+				<div class="movie__image">
+					<img src="http://placekitten.com/124/184">
+					<div class="movie__overlay">
+						<img class="movie__play" src="http://placekitten.com/44/44">
+				    </div>
+				</div>
 				<p class="movie__title">The Great Catsby</p>
 				<p class="movie__text">
 				Drama, Romance<br>
 				143 min</p>
 			</div>
 
-			<div class="movie">
-				<img src="http://placekitten.com/124/184" class="movie__image">
+			<div class="movie l-movie">
+				<div class="movie__image">
+					<img src="http://placekitten.com/124/184">
+					<div class="movie__overlay">
+						<img class="movie__play" src="http://placekitten.com/44/44">
+				    </div>
+				</div>
 				<p class="movie__title">The Great Catsby</p>
 				<p class="movie__text">
 				Drama, Romance<br>
 				143 min</p>
 			</div>
 
-			<div class="movie">
-				<img src="http://placekitten.com/124/184" class="movie__image">
+			<div class="movie l-movie">
+				<div class="movie__image">
+					<img src="http://placekitten.com/124/184">
+					<div class="movie__overlay">
+						<img class="movie__play" src="http://placekitten.com/44/44">
+				    </div>
+				</div>
 				<p class="movie__title">The Great Catsby</p>
 				<p class="movie__text">
 				Drama, Romance<br>
 				143 min</p>
 			</div>
 
-			<div class="movie">
-				<img src="http://placekitten.com/124/184" class="movie__image">
+			<div class="movie l-movie">
+				<div class="movie__image">
+					<img src="http://placekitten.com/124/184">
+					<div class="movie__overlay">
+						<img class="movie__play" src="http://placekitten.com/44/44">
+				    </div>
+				</div>
 				<p class="movie__title">The Great Catsby</p>
 				<p class="movie__text">
 				Drama, Romance<br>
 				143 min</p>
 			</div>
 
-			<div class="movie">
-				<img src="http://placekitten.com/124/184" class="movie__image">
+			<div class="movie l-movie">
+				<div class="movie__image">
+					<img src="http://placekitten.com/124/184">
+					<div class="movie__overlay">
+						<img class="movie__play" src="http://placekitten.com/44/44">
+				    </div>
+				</div>
 				<p class="movie__title">The Great Catsby</p>
 				<p class="movie__text">
 				Drama, Romance<br>
 				143 min</p>
 			</div>
 
-			<div class="movie">
-				<img src="http://placekitten.com/124/184" class="movie__image">
+			<div class="movie l-movie">
+				<div class="movie__image">
+					<img src="http://placekitten.com/124/184">
+					<div class="movie__overlay">
+						<img class="movie__play" src="http://placekitten.com/44/44">
+				    </div>
+				</div>
 				<p class="movie__title">The Great Catsby</p>
 				<p class="movie__text">
 				Drama, Romance<br>
 				143 min</p>
 			</div>
 
-			<div class="movie">
-				<img src="http://placekitten.com/124/184" class="movie__image">
+			<div class="movie l-movie">
+				<div class="movie__image">
+					<img src="http://placekitten.com/124/184">
+					<div class="movie__overlay">
+						<img class="movie__play" src="http://placekitten.com/44/44">
+				    </div>
+				</div>
 				<p class="movie__title">The Great Catsby</p>
 				<p class="movie__text">
 				Drama, Romance<br>
 				143 min</p>
 			</div>
 
-			<div class="movie">
-				<img src="http://placekitten.com/124/184" class="movie__image">
+			<div class="movie l-movie">
+				<div class="movie__image">
+					<img src="http://placekitten.com/124/184">
+					<div class="movie__overlay">
+						<img class="movie__play" src="http://placekitten.com/44/44">
+				    </div>
+				</div>
 				<p class="movie__title">The Great Catsby</p>
 				<p class="movie__text">
 				Drama, Romance<br>
 				143 min</p>
 			</div>
 
-			<div class="movie">
-				<img src="http://placekitten.com/124/184" class="movie__image">
+			<div class="movie l-movie">
+				<div class="movie__image">
+					<img src="http://placekitten.com/124/184">
+					<div class="movie__overlay">
+						<img class="movie__play" src="http://placekitten.com/44/44">
+				    </div>
+				</div>
 				<p class="movie__title">The Great Catsby</p>
 				<p class="movie__text">
 				Drama, Romance<br>
 				143 min</p>
 			</div>
 
-			<div class="movie">
-				<img src="http://placekitten.com/124/184" class="movie__image">
+			<div class="movie l-movie">
+				<div class="movie__image">
+					<img src="http://placekitten.com/124/184">
+					<div class="movie__overlay">
+						<img class="movie__play" src="http://placekitten.com/44/44">
+				    </div>
+				</div>
+				<p class="movie__title">The Great Catsby</p>
+				<p class="movie__text">
+				Drama, Romance<br>
+				143 min</p>
+			</div>
+
+			<div class="movie l-movie">
+				<div class="movie__image">
+					<img src="http://placekitten.com/124/184">
+					<div class="movie__overlay">
+						<img class="movie__play" src="http://placekitten.com/44/44">
+				    </div>
+				</div>
+				<p class="movie__title">The Great Catsby</p>
+				<p class="movie__text">
+				Drama, Romance<br>
+				143 min</p>
+			</div>
+
+			<div class="movie l-movie">
+				<div class="movie__image">
+					<img src="http://placekitten.com/124/184">
+					<div class="movie__overlay">
+						<img class="movie__play" src="http://placekitten.com/44/44">
+				    </div>
+				</div>
+				<p class="movie__title">The Great Catsby</p>
+				<p class="movie__text">
+				Drama, Romance<br>
+				143 min</p>
+			</div>
+
+			<div class="movie l-movie">
+				<div class="movie__image">
+					<img src="http://placekitten.com/124/184">
+					<div class="movie__overlay">
+						<img class="movie__play" src="http://placekitten.com/44/44">
+				    </div>
+				</div>
+				<p class="movie__title">The Great Catsby</p>
+				<p class="movie__text">
+				Drama, Romance<br>
+				143 min</p>
+			</div>
+
+			<div class="movie l-movie">
+				<div class="movie__image">
+					<img src="http://placekitten.com/124/184">
+					<div class="movie__overlay">
+						<img class="movie__play" src="http://placekitten.com/44/44">
+				    </div>
+				</div>
+				<p class="movie__title">The Great Catsby</p>
+				<p class="movie__text">
+				Drama, Romance<br>
+				143 min</p>
+			</div>
+
+			<div class="movie l-movie">
+				<div class="movie__image">
+					<img src="http://placekitten.com/124/184">
+					<div class="movie__overlay">
+						<img class="movie__play" src="http://placekitten.com/44/44">
+				    </div>
+				</div>
+				<p class="movie__title">The Great Catsby</p>
+				<p class="movie__text">
+				Drama, Romance<br>
+				143 min</p>
+			</div>
+
+			<div class="movie l-movie">
+				<div class="movie__image">
+					<img src="http://placekitten.com/124/184">
+					<div class="movie__overlay">
+						<img class="movie__play" src="http://placekitten.com/44/44">
+				    </div>
+				</div>
+				<p class="movie__title">The Great Catsby</p>
+				<p class="movie__text">
+				Drama, Romance<br>
+				143 min</p>
+			</div>
+
+			<div class="movie l-movie">
+				<div class="movie__image">
+					<img src="http://placekitten.com/124/184">
+					<div class="movie__overlay">
+						<img class="movie__play" src="http://placekitten.com/44/44">
+				    </div>
+				</div>
+				<p class="movie__title">The Great Catsby</p>
+				<p class="movie__text">
+				Drama, Romance<br>
+				143 min</p>
+			</div>
+
+			<div class="movie l-movie">
+				<div class="movie__image">
+					<img src="http://placekitten.com/124/184">
+					<div class="movie__overlay">
+						<img class="movie__play" src="http://placekitten.com/44/44">
+				    </div>
+				</div>
 				<p class="movie__title">The Great Catsby</p>
 				<p class="movie__text">
 				Drama, Romance<br>
@@ -115,19 +279,19 @@
 			</div>
 		</div>
 	</div>
+	<div class="self l-self">
+		<ul class="sidebar__list">
+			<li class="friend">
+				<img class="friend__icon" src="http://placekitten.com/25/25">
+				<p class="friend__person friend__person--reversetext">Jack Dorsey</p>
+				<object class="friend__status">&#8226;</object>
+			</li>
+		</ul>
+	</div>
 	<div class="sidechat">
-		<div class="sidechat__self">
-			<ul>
-				<li class="friend">
-					<img class="friend__icon" src="http://placekitten.com/25/25">
-					<p>Jack Dorsey</p>
-					<object class="friend__status">&#8226;</object>
-				</li>
-			</ul>
-		</div>
 		<div class="sidechat__friends">
-			<h5 class="sidebar__head">Online</h5>
-			<ul>
+			<p class="sidebar__head">Online</p>
+			<ul class="sidebar__list">
 			<li class="friend">
 				<img class="friend__icon" src="http://placekitten.com/25/25">
 				<div class="friend__text">
@@ -174,8 +338,8 @@
 			</li>
 			</ul>
 			
-			<h5 class="sidebar__head">Offline</h5>
-			<ul>
+			<p class="sidebar__head">Offline</p>
+			<ul class="sidebar__list">
 			<li class="friend">
 				<img class="friend__icon" src="http://placekitten.com/25/25">
 				<div>
@@ -222,9 +386,9 @@
 			</li>
 			</ul>
 		</div>
-		<div class="sidechat__search">
-			<input type="searchline" name="Chat" class="sidechat__field" placeholder="Chat with...">
-		</div>
+	</div>
+	<div class="chatsearch l-chatsearch">
+		<input type="searchline" name="Chat" class="chatsearch__field" placeholder="Chat with...">
 	</div>
 </div>
 </body>

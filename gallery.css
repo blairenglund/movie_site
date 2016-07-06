@@ -1,0 +1,12 @@
+.galleryLabel{
+	font-family: sans-serif;
+}
+
+.galleryContainer{
+	padding: 20px;
+	border: 4px outset black;
+}
+
+.galleryContainer--reversed{
+	background-color: #000;
+}

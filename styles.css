@@ -1,16 +1,20 @@
 .flexcontainer{
-	display: flex;
+	/* display: flex;
 	flex-flow: row nowrap;
-	justify-content: space-between;
-	margin: -8px;
+	justify-content: space-between; */
+	margin: -8px -8px 0px -8px;
 	height: 100vh;
-
 }
 
 .searchbar{
 	background-color: #BC5A58;
-	margin: -20px -20px 0px -20px;
 	padding: 25px 25px 25px 25px;
+}
+
+.l-searchbar{
+	height: 30px;
+	width: 170px;
+	position: fixed;
 }
 
 .searchbar__field{
@@ -18,9 +22,9 @@
 	color: #FFF;
 	border: none;
 	border-bottom: 2px solid white;
-	width: 90%;
+	width: 100%;
 	background-image: url('http://placekitten.com/20/20');
-    background-position: 135px 1px; 
+    background-position: right; 
     background-repeat: no-repeat;
     padding: 2px 0px 4px 0px;
 }
@@ -36,47 +40,56 @@
 	flex-shrink: 0;
 	width: 180px;
 	position: fixed;
-	min-height: 100vh;
+	top:75px;
+	bottom: 0;
+	overflow-y: scroll;
+}
+
+.navbar__list{
+	margin: 0 0 0 -40px;
 }
 
 .sidebar__head{
 	color: #333E44;
 	font-family: "Helvetica", Tahoma, sans-serif;
-	padding-top: 20px;
+	font-size: 10pt;
+	font-weight: bold;
 }
 
-.list__icon{
+.sidebar__list{
+	display: inline;
+	margin-top: -10px;
+	margin-left: -35px;
+}
+
+.listitem{
+	list-style: none;
+	margin: 25px 0 25px 0;
+}
+
+.listitem__icon{
 	border-radius: 10px;
 	margin-right: 10px;
 	vertical-align: middle;
 }
 
-.list__text{
+.listitem__text{
+	list-style: none;
 	color: white;
 	font-family: "Helvetica", Tahoma, sans-serif;
-	margin: 15px 0 15px 0;
-	list-style-image: url(http://placekitten.com/15/15);
 	font-size: 10pt;
 }
 
-.list__text--currentpage{
+.listitem--currentpage{
 	background-color: #1E242B;
-	padding: 10px 0px 10px 10px;
-	margin: -10px 0 -10px -10px;
+	padding: 15px 0 1px 10px;
+	margin: -15px 0 -15px -10px;
 }
 
-.movielist{
-	display: flex;
-	flex-flow: row wrap;
-	align-items: space-between;
-	justify-content: space-between;
-	align-content: space-between;
-	padding: 0px 20px 0px 20px;
-}
 
 .main{
 	max-height: 100vh;
-	margin: 0px 0px 0px 220px;
+	margin: 0px 220px 0px 220px;
 }
 
 .main__top{
@@ -93,26 +106,66 @@
 	font-size: 24pt;
 }
 
-.main__order{
+.sortLinks__link{
 	font-size: 10pt;
 	font-weight: bold;
 	color: #DDD;
+	font-family: "Helvetica", Tahoma, sans-serif;
 }
 
-.main__order--selected{
+.sortLinks__link--selected{
 	color: #88BFC6;
 }
 
-.main__icon{
+.sortLinks__divider{
+	font-size: 10pt;
+	font-weight: bold;
+	color: #DDD
+	font-family: "Helvetica", Tahoma, sans-serif;
+}
+
+.otherbuttons__icon{
 	border-radius: 20px;
 }
 
+.movielist{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-content: space-between;
+	padding: 0px 20px 0px 20px;
+}
+
 .movie{
+}
+
+.l-movie{
 	margin: 15px;
 }
 
 .movie__image{
 	border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.25s ease;
+    margin: 0 auto;
+    max-width: 124;
+}
+.movie__image:hover .movie__overlay {
+    height: 100%;
+}
+.movie__overlay {
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    z-index: 10;
+    transition: all 0.25s ease;
+}
+
+.movie__play{
+	padding: 70px 0 0 40px;
 }
 
 .movie__title{
@@ -128,45 +181,61 @@
 }
 
 .sidechat{
-	display: flex;
+	/* display: flex;
 	flex-flow: column nowrap;
-	align-items: stretch;
-	justify-content: space-between;
+	align-items: flex-start;
+	justify-content: space-between; */
 	background-color: #EDEEEF;
-	flex-shrink: 0;
-	padding: 20px;
-	width: 180px;
-	float: right;
-}
-
-.sidechat__self{
-	background-color: #88BFC6;
-	margin: -20px;
-	padding: 15px 25px 15px 25px;
-	flex-shrink: 0;
-}
-
-.sidechat__search{
-	background-color: #C6CDD8;
-	margin: -20px;
-	padding: 25px 25px 25px 25px;
+	padding: 0px 20px 0px 20px;
+	width: 170px;
 	position: fixed;
-	height: 50px;
+	right: 0;
+	top: 75px;
+	bottom: 70px;
+	z-index: 0;
+	overflow-y: scroll;
 }
 
-.sidechat__field{
+.self{
+	background-color: #88BFC6;
+}
+.l-self{
+	width: 170px;
+	height: 75px;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 1;
+	padding: 0 20px 0 20px;
+}
+
+.chatsearch{
+	background-color: #C6CDD8;
+	padding: 25px 20px 15px 20px;
+	
+}
+.l-chatsearch{
+	width: 170px;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+	height: 30px;
+}
+
+.chatsearch__field{
 	background-color: #C6CDD8;
 	color: #FFF;
 	border: none;
 	border-bottom: 2px solid white;
-	width: 90%;
+	width: 100%;
 	background-image: url('http://placekitten.com/20/20');
-    background-position: 135px 1px; 
+    background-position: right; 
     background-repeat: no-repeat;
     padding: 2px 0px 4px 0px;
 }
 
-.sidechat__field::-webkit-input-placeholder{
+.chatsearch__field::-webkit-input-placeholder{
 	color: white;
 	font-style: italic;
 }
@@ -183,20 +252,12 @@
 	padding-top: 20px;
 }
 
-.sidechat__self{
-	color: #fff;
-	font-family: "Helvetica", Tahoma, sans-serif;
-	font-size: 10pt;
-}
-
 .friend{
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
 	align-items: center;
-	min-height: 50px;
 	list-style: none;
-	margin-left: -35px;
 }
 
 .friend__icon{
@@ -212,14 +273,19 @@
 	color: #12171B;
 	font-family: "Helvetica", Tahoma, sans-serif;
 	font-weight: bold;
-	margin: 10px 0 10px 0;
+	margin: 10px 0 0 0;
 	font-size: 10pt;
+}
+
+.friend__person--reversetext{
+	color: #FFF;
+	margin-top: 0px;
 }
 
 .friend__movie{
 	font-family: "Helvetica", Tahoma, sans-serif;
 	font-size: 9pt;
-	margin-top: -11px;
+	margin-top: -1px;
 }
 
 .friend__status{
